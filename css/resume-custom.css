@@ -94,6 +94,10 @@ body {
   text-align: right;
 }
 
+.container-portfolio img {
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
 
   .container-resume {
@@ -128,6 +132,7 @@ body {
     top: 90px;
     left: 65%;
     width: 33%;
+    max-width: 33%;
     text-align: center; 
     margin-left:auto; 
     margin-right:2%; 
