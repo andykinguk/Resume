@@ -1,0 +1,28 @@
+-- Test
+
+cd public_html/test
+
+rm -rf
+
+git clone -b [branch name] [url]
+
+cd andyking.online
+
+mv -vf * ../
+
+
+
+
+-- Production
+
+cd public_html
+
+shopt -s extglob
+
+rm -rf !(test)
+
+git clone [url]
+
+cd andyking.online
+
+mv -vf * ../

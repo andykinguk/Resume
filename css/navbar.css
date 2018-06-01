@@ -1,0 +1,216 @@
+.navbar {
+    padding: 4px;
+  }
+
+.navbar-brand {
+    font-family: 'Quicksand', 'Raleway', Tahoma, sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.nav-block {
+    display: inline-block;
+    width: 300px;
+    max-width: 25%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.details {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.details a {
+    color: darkgrey;
+    text-align: center;
+    display: block;   
+    
+}
+
+@media (min-width:768px) {
+
+    .iconarray {
+        width:580px;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    .title {
+        max-width: 100%;
+    }
+
+    .iconarray {
+        width:328px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .details {
+        display: none;
+    }
+
+}
+
+.icon-nav {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px;
+    width: 75px;
+}
+
+.icon-nav img {
+    background-clip: content-box;
+    background-color: #ffffff;
+    padding: 2px;
+}
+
+.icon-nav span {
+    color: darkgrey;
+    text-align: center;
+    display: block;
+}
+
+
+.index:hover img {
+    background-color: #dc3545;
+    border-radius: 50%; 
+    border:2px solid #dc3545;
+    padding: 0;
+}
+
+.index:hover span {
+    color: #ffffff;
+}
+
+
+.about:hover img {
+    background-color: #fd7e14;
+    border-radius: 50%; 
+    border:2px solid #fd7e14;
+    padding: 0;
+}
+
+.about:hover span {
+    color: #ffffff;
+}
+
+
+.resume:hover img {
+    background-color: #ffc107;
+    border-radius: 50%; 
+    border:2px solid #ffc107;
+    padding: 0;
+}
+
+.resume:hover span {
+    color: #ffffff;
+}
+
+
+.github:hover img {
+    background-color: #28a745;
+    border-radius: 50%; 
+    border:2px solid #28a745;
+    padding: 0;
+}
+
+.github:hover span {
+    color: #ffffff;
+}
+
+
+.trello:hover img {
+    background-color: #17a2b8;
+    border-radius: 50%; 
+    border:2px solid #17a2b8;
+    padding: 0;
+}
+
+.trello:hover span {
+    color: #ffffff;
+}
+
+
+.linkedin:hover img {
+    background-color: #007bff;
+    border-radius: 50%; 
+    border:2px solid #007bff;
+    padding: 0;
+}
+
+.linkedin:hover span {
+    color: #ffffff;
+}
+
+.email:hover img {
+    background-color: #6f42c1;
+    border-radius: 50%; 
+    border:2px solid #6f42c1;
+    padding: 0;
+}
+
+.email:hover span {
+    color: #ffffff;
+}
+
+
+
+.rainbow:hover {
+    /* Chrome, Safari, Opera */
+    -webkit-animation: rainbow 7s infinite; 
+    
+    /* Internet Explorer */
+    -ms-animation: rainbow 7s infinite;
+    
+    /* Standar Syntax */
+    animation: rainbow 7s infinite; 
+    }
+    
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes rainbow{
+        0%{color: #dc3545;}
+        14%{color: #fd7e14}
+        28%{color: #ffc107;}
+        42%{color: #28a745;}
+        56%{color: #17a2b8}
+        70%{color: #007bff;}
+        84%{color: #6f42c1;}
+        96%{color: #ffffff;}        
+    }
+    
+    /* Internet Explorer */
+    @-ms-keyframes rainbow{
+        0%{color: #dc3545;}
+        14%{color: #fd7e14}
+        28%{color: #ffc107;}
+        42%{color: #28a745;}
+        56%{color: #17a2b8}
+        70%{color: #007bff;}
+        84%{color: #6f42c1;}
+        96%{color: #ffffff;}
+    }
+
+    
+
+    @keyframes rainbow{
+        0%{color: #dc3545;}
+        14%{color: #fd7e14}
+        28%{color: #ffc107;}
+        42%{color: #28a745;}
+        56%{color: #17a2b8}
+        70%{color: #007bff;}
+        84%{color: #6f42c1;}
+        96%{color: #ffffff;}
+    }

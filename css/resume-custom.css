@@ -1,3 +1,5 @@
+@import url("navbar.css");
+
 :root {
   --blueberry: #4392F1;
   --falured: #8C1C13;
@@ -7,42 +9,25 @@
 }
 
 body { 
-  padding-top: 60px; 
+  padding-top: 90px; 
   font-family: 'Raleway', arial, serif;  
-}
-
-.navbar {
-  font-family: 'Raleway', arial, serif;
 }
 
 .bg-slate {
   background-color: var(--slategrey);
 }
 
-.navbar-brand {
-  color: var(--blueberry);
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.nav-link {
-  color: var(--blueberry);
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.navbar .btn {
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
 .bg-dark {
-  background-color: var(--charcoal) !important;
+  background-color: #000000!important;
 }
 
 .hoverline {
     display: inline-block;
     text-decoration: none;
+}
+
+.hoverline img {
+  background-color: #ffffff;
 }
 
 .hoverline::after {
@@ -55,8 +40,10 @@ body {
 
 .hoverline:hover::after {
     width: 100%;
-    background-color: var(--blueberry);
+    background-color: #ffffff;
 }
+
+
 
 .baseline {
   border-bottom:2px solid rgb(0,0,0);padding-bottom:10px;
@@ -103,6 +90,10 @@ body {
   text-align: right;
 }
 
+.container-portfolio img {
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
 
   .container-resume {
@@ -134,9 +125,10 @@ body {
 
   .container-portfolio {
     position: absolute;
-    top: 3em;
+    top: 90px;
     left: 65%;
     width: 33%;
+    max-width: 33%;
     text-align: center; 
     margin-left:auto; 
     margin-right:2%; 
