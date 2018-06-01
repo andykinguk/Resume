@@ -1,6 +1,5 @@
 @import url("navbar.css");
 
-
 :root {
   --blueberry: #4392F1;
   --falured: #8C1C13;
@@ -14,12 +13,9 @@ body {
   font-family: 'Raleway', arial, serif;  
 }
 
-
-
 .bg-slate {
   background-color: var(--slategrey);
 }
-
 
 .bg-dark {
   background-color: #000000!important;

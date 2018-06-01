@@ -1,20 +1,19 @@
 .navbar {
-    font-family: 'Raleway', arial, serif;
     padding: 4px;
   }
 
 .navbar-brand {
+    font-family: 'Quicksand', 'Raleway', Tahoma, sans-serif;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.5em;
 }
-  
+
 .nav-link {
-    font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
 }
 
-.title {
+.nav-block {
     display: inline-block;
     width: 300px;
     max-width: 25%;
@@ -22,10 +21,22 @@
     color: #ffffff;
 }
 
+.details {
+    font-family: 'Raleway', sans-serif;
+    color: #ffffff;
+}
+
+.details a {
+    color: darkgrey;
+    text-align: center;
+    display: block;   
+    
+}
+
 @media (min-width:768px) {
 
     .iconarray {
-        width:553px;
+        width:580px;
     }
 
 }
@@ -50,14 +61,13 @@
 
 }
 
-.details {
-    color: #ffffff;
-}
-
 .icon-nav {
-    margin-left: 14px;
-    margin-right: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 4px;
+    width: 75px;
 }
 
 .icon-nav img {
