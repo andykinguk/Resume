@@ -1,13 +1,5 @@
 @import url("navbar.css");
 
-:root {
-  --blueberry: #4392F1;
-  --falured: #8C1C13;
-  --raisinblack: #252323;
-  --slategrey: #70798C;
-  --charcoal: #394053;
-}
-
 body { 
   padding-top: 90px; 
   font-family: 'Raleway', arial, serif;  
@@ -42,8 +34,6 @@ body {
     width: 100%;
     background-color: #ffffff;
 }
-
-
 
 .baseline {
   border-bottom:2px solid rgb(0,0,0);padding-bottom:10px;
