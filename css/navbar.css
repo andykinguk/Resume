@@ -1,6 +1,5 @@
 .navbar {
     padding: 4px;
-    z-index: 0;
   }
 
 .navbar-brand {
@@ -34,20 +33,20 @@
 }
 
 /*0 - 284px: Title over three rows of icons*/
-@media (max-width: 284.98px) {
+@media (max-width: 300px) {
 
     .details {
         display: none;
     }
     
     .container-body {
-        margin-top: 274px;
+        margin-top: 264px;
     }
 
 }
 
 /*285 - 619px: Title over two rows of icons*/
-@media (min-width: 284.98px) {
+@media (min-width: 300.1px) {
 
     .details {
         display: none;
@@ -62,34 +61,34 @@
     }
     
     .container-body {
-        margin-top: 190px;
+        margin-top: 180px;
     }
 
 }
 
 /*620 - 767px: Title left, two rows of icons right*/
-@media (min-width: 619.98px) {
+@media (min-width: 636px) {
 
     .container-body {
-        margin-top: 134px;
+        margin-top: 124px;
     }
 
 }
 
 /*768 - 887px: Title over one row of icons*/
-@media (min-width: 767.98px) {
+@media (min-width: 768px) {
 
 }
 
 /*888 - 1200px: Title left, one row of icons right*/
-@media (min-width: 887.98px) {
+@media (min-width: 888px) {
 
     .iconarray {
         width:580px;
     }
 
     .container-body {
-        margin-top: 50px;
+        margin-top: 40px;
     }
 
 }

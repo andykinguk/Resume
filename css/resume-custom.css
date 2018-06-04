@@ -5,10 +5,6 @@ body {
   font-family: 'Raleway', arial, serif;  
 }
 
-.bg-slate {
-  background-color: var(--slategrey);
-}
-
 .bg-dark {
   background-color: #000000!important;
 }
@@ -35,10 +31,6 @@ body {
     background-color: #ffffff;
 }
 
-.baseline {
-  border-bottom:2px solid rgb(0,0,0);padding-bottom:10px;
-  }
-
 .container-body {
   text-align: center; 
   width: 100%; 
@@ -46,24 +38,20 @@ body {
   margin-right:auto; 
 }
 
-.dropdown-menu {
-  border:2px solid var(--falured);
-}
-
 .card-body {
   display: flex;
 }
 
 .card-picture {
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 20%;
 }
 
 .card-picture img {
   max-width: 120px;
   max-height: 120px;
+  width: 100%;
   border-radius: 20%; 
-  border:2px solid var(--charcoal);
+  border:2px solid black;
   object-fit: cover;
 }
 
@@ -71,6 +59,16 @@ body {
   width:1000em;
   max-width: 85%;
   text-align: left;
+}
+
+.resume-card-typea .card-picture {
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.resume-card-typeb .card-picture {
+  margin-left: 2%;
+  margin-right: 0;
 }
 
 .card-content-typeb {
@@ -91,14 +89,13 @@ body {
     text-align: center; 
     margin-left:2%; 
     margin-right:auto; 
-    padding-top:40px
   }
 
   .resume-card-typea {
     width: 90%;
     margin-right: 0;
     margin-left: auto;
-    border-left:3px solid var(--charcoal);
+    border-left:3px solid black;
     padding-bottom:5px;
     text-align: left;
   }
@@ -107,43 +104,35 @@ body {
     width: 90%;
     margin-left: 0;
     margin-right: auto;
-    border-right:3px solid var(--charcoal);
+    border-right:3px solid black;
     padding-bottom:5px;
     text-align: right;
   }
 
   .container-portfolio {
-    position: absolute;
-    top: 90px;
-    left: 65%;
+    position: relative;
     width: 33%;
     max-width: 33%;
     text-align: center; 
     margin-left:auto; 
     margin-right:2%; 
-    padding-top:40px
   }
 }
 
 @media (max-width: 767.98px) {
 
-  .container-resume {
-    width: 95%;
-    position: relative;
-    text-align: center; 
-    margin:auto; 
+  .container-portfolio {
     padding-top:40px
   }
 
-  .container-portfolio {
-    width: 100%;
-    position: relative;
-    left: 1em;
+  .container-body {
+    display: block!important;
+    width: 90%;
     text-align: center; 
     margin-left:auto; 
-    margin-right:2%; 
-    padding-top:40px
+    margin-right: auto;
   }
+
 }
 
 .aboutlist {
@@ -152,4 +141,8 @@ body {
   margin-right: auto; 
   list-style-position: inside; 
   text-align: left
+}
+
+.flex {
+  display:flex;
 }
