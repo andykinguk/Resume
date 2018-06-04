@@ -1,5 +1,7 @@
 @import url("navbar.css");
 
+/* Common */
+
 body { 
   padding-top: 90px; 
   font-family: 'Raleway', arial, serif;  
@@ -9,34 +11,14 @@ body {
   background-color: #000000!important;
 }
 
-.hoverline {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.hoverline img {
-  background-color: #ffffff;
-}
-
-.hoverline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    transition: width .3s;
-}
-
-.hoverline:hover::after {
-    width: 100%;
-    background-color: #ffffff;
-}
-
 .container-body {
   text-align: center; 
   width: 100%; 
   margin-left:auto; 
   margin-right:auto; 
 }
+
+/* Resume specific */
 
 .card-body {
   display: flex;
@@ -81,7 +63,9 @@ body {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
+/* Media Queries */
+
+@media (min-width: 888px) {
 
   .container-resume {
     position: relative;
@@ -119,18 +103,22 @@ body {
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 887.98px) {
 
   .container-portfolio {
     padding-top:40px
   }
 
   .container-body {
-    display: block!important;
+    display: block;
     width: 90%;
     text-align: center; 
     margin-left:auto; 
     margin-right: auto;
+  }
+
+  .fullscreenflex {
+    display: block!important;
   }
 
 }
@@ -143,6 +131,6 @@ body {
   text-align: left
 }
 
-.flex {
+.fullscreenflex {
   display:flex;
 }

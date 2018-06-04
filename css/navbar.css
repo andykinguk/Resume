@@ -103,6 +103,8 @@
 
 }
 
+
+/* Icon Classes */
 .icon-nav {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -124,7 +126,7 @@
     display: block;
 }
 
-
+/* Index - Red */
 .index:hover img {
     background-color: #dc3545;
     border-radius: 50%; 
@@ -136,7 +138,7 @@
     color: #ffffff;
 }
 
-
+/* About - Orange */
 .about:hover img {
     background-color: #fd7e14;
     border-radius: 50%; 
@@ -148,7 +150,7 @@
     color: #ffffff;
 }
 
-
+/* Resume - Yellow */
 .resume:hover img {
     background-color: #ffc107;
     border-radius: 50%; 
@@ -160,7 +162,7 @@
     color: #ffffff;
 }
 
-
+/* Github - Green */
 .github:hover img {
     background-color: #28a745;
     border-radius: 50%; 
@@ -172,7 +174,7 @@
     color: #ffffff;
 }
 
-
+/* Trello - Teal 
 .trello:hover img {
     background-color: #17a2b8;
     border-radius: 50%; 
@@ -184,7 +186,7 @@
     color: #ffffff;
 }
 
-
+LinkedIn - Blue */
 .linkedin:hover img {
     background-color: #007bff;
     border-radius: 50%; 
@@ -196,6 +198,7 @@
     color: #ffffff;
 }
 
+/* Email - Purple */
 .email:hover img {
     background-color: #6f42c1;
     border-radius: 50%; 
@@ -207,52 +210,71 @@
     color: #ffffff;
 }
 
+/* Hoverover */    
+.hoverline {
+    display: inline-block;
+    text-decoration: none;
+}
 
+.hoverline img {
+  background-color: #ffffff;
+}
+
+.hoverline::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .3s;
+}
+
+.hoverline:hover::after {
+    width: 100%;
+    background-color: #ffffff;
+}
 
 .rainbow:hover {
     /* Chrome, Safari, Opera */
     -webkit-animation: rainbow 7s infinite; 
-    
+
     /* Internet Explorer */
     -ms-animation: rainbow 7s infinite;
-    
+
     /* Standar Syntax */
     animation: rainbow 7s infinite; 
-    }
+}
     
-    /* Chrome, Safari, Opera */
-    @-webkit-keyframes rainbow{
-        0%{color: #dc3545;}
-        14%{color: #fd7e14}
-        28%{color: #ffc107;}
-        42%{color: #28a745;}
-        56%{color: #17a2b8}
-        70%{color: #007bff;}
-        84%{color: #6f42c1;}
-        96%{color: #ffffff;}        
-    }
-    
-    /* Internet Explorer */
-    @-ms-keyframes rainbow{
-        0%{color: #dc3545;}
-        14%{color: #fd7e14}
-        28%{color: #ffc107;}
-        42%{color: #28a745;}
-        56%{color: #17a2b8}
-        70%{color: #007bff;}
-        84%{color: #6f42c1;}
-        96%{color: #ffffff;}
-    }
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+    0%{color: #dc3545;}
+    14%{color: #fd7e14}
+    28%{color: #ffc107;}
+    42%{color: #28a745;}
+    56%{color: #17a2b8}
+    70%{color: #007bff;}
+    84%{color: #6f42c1;}
+    96%{color: #ffffff;}        
+}
 
-    
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+    0%{color: #dc3545;}
+    14%{color: #fd7e14}
+    28%{color: #ffc107;}
+    42%{color: #28a745;}
+    56%{color: #17a2b8}
+    70%{color: #007bff;}
+    84%{color: #6f42c1;}
+    96%{color: #ffffff;}
+}
 
-    @keyframes rainbow{
-        0%{color: #dc3545;}
-        14%{color: #fd7e14}
-        28%{color: #ffc107;}
-        42%{color: #28a745;}
-        56%{color: #17a2b8}
-        70%{color: #007bff;}
-        84%{color: #6f42c1;}
-        96%{color: #ffffff;}
-    }
+@keyframes rainbow{
+    0%{color: #dc3545;}
+    14%{color: #fd7e14}
+    28%{color: #ffc107;}
+    42%{color: #28a745;}
+    56%{color: #17a2b8}
+    70%{color: #007bff;}
+    84%{color: #6f42c1;}
+    96%{color: #ffffff;}
+}
