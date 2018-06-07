@@ -66,25 +66,28 @@
 
 }
 
-/*620 - 767px: Title left, two rows of icons right*/
+/*620 - 888px: Title left, two rows of icons right*/
 @media (min-width: 636px) {
 
     .container-body {
         margin-top: 124px;
     }
 
-}
+    .navbar-dark {
+        display: block;
+    }
 
-/*768 - 887px: Title over one row of icons*/
-@media (min-width: 768px) {
+    .iconarray {
+        width:580px;
+    }
 
 }
 
 /*888 - 1200px: Title left, one row of icons right*/
 @media (min-width: 888px) {
 
-    .iconarray {
-        width:580px;
+    .navbar-dark {
+        display: flex;
     }
 
     .container-body {
