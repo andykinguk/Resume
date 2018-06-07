@@ -1,28 +1,17 @@
 -- Test
 
-cd public_html/test
-
-rm -rf
-
+cd public_html
+rm -rf test
+mkdir test
 git clone -b [branch name] [url]
-
-cd andyking.online
-
-mv -vf * ../
-
+mv -if * andyking.online/* .
 
 
 
 -- Production
 
 cd public_html
-
 shopt -s extglob
-
 rm -rf !(test)
-
 git clone [url]
-
-cd andyking.online
-
-mv -vf * ../
+mv -if * andyking.online/* .
