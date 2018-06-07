@@ -1,70 +1,39 @@
 @import url("navbar.css");
 
+/* Common */
+
 body { 
   padding-top: 90px; 
   font-family: 'Raleway', arial, serif;  
-}
-
-.bg-slate {
-  background-color: var(--slategrey);
 }
 
 .bg-dark {
   background-color: #000000!important;
 }
 
-.hoverline {
-    display: inline-block;
-    text-decoration: none;
-}
-
-.hoverline img {
-  background-color: #ffffff;
-}
-
-.hoverline::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    transition: width .3s;
-}
-
-.hoverline:hover::after {
-    width: 100%;
-    background-color: #ffffff;
-}
-
-.baseline {
-  border-bottom:2px solid rgb(0,0,0);padding-bottom:10px;
-  }
-
 .container-body {
   text-align: center; 
   width: 100%; 
   margin-left:auto; 
   margin-right:auto; 
-  padding-top:50px
 }
 
-.dropdown-menu {
-  border:2px solid var(--falured);
-}
+/* Resume specific */
 
 .card-body {
   display: flex;
 }
 
 .card-picture {
-  margin-left: 2%;
-  margin-right: 2%;
+  width: 20%;
 }
 
 .card-picture img {
   max-width: 120px;
   max-height: 120px;
+  width: 100%;
   border-radius: 20%; 
-  border:2px solid var(--charcoal);
+  border:2px solid black;
   object-fit: cover;
 }
 
@@ -72,6 +41,16 @@ body {
   width:1000em;
   max-width: 85%;
   text-align: left;
+}
+
+.resume-card-typea .card-picture {
+  margin-left: 0;
+  margin-right: 2%;
+}
+
+.resume-card-typeb .card-picture {
+  margin-left: 2%;
+  margin-right: 0;
 }
 
 .card-content-typeb {
@@ -84,7 +63,9 @@ body {
   max-width: 100%;
 }
 
-@media (min-width: 768px) {
+/* Media Queries */
+
+@media (min-width: 888px) {
 
   .container-resume {
     position: relative;
@@ -92,14 +73,13 @@ body {
     text-align: center; 
     margin-left:2%; 
     margin-right:auto; 
-    padding-top:40px
   }
 
   .resume-card-typea {
     width: 90%;
     margin-right: 0;
     margin-left: auto;
-    border-left:3px solid var(--charcoal);
+    border-left:3px solid black;
     padding-bottom:5px;
     text-align: left;
   }
@@ -108,43 +88,39 @@ body {
     width: 90%;
     margin-left: 0;
     margin-right: auto;
-    border-right:3px solid var(--charcoal);
+    border-right:3px solid black;
     padding-bottom:5px;
     text-align: right;
   }
 
   .container-portfolio {
-    position: absolute;
-    top: 90px;
-    left: 65%;
+    position: relative;
     width: 33%;
     max-width: 33%;
     text-align: center; 
     margin-left:auto; 
     margin-right:2%; 
-    padding-top:40px
   }
 }
 
-@media (max-width: 767.98px) {
-
-  .container-resume {
-    width: 95%;
-    position: relative;
-    text-align: center; 
-    margin:auto; 
-    padding-top:40px
-  }
+@media (max-width: 887.98px) {
 
   .container-portfolio {
-    width: 100%;
-    position: relative;
-    left: 1em;
-    text-align: center; 
-    margin-left:auto; 
-    margin-right:2%; 
     padding-top:40px
   }
+
+  .container-body {
+    display: block;
+    width: 90%;
+    text-align: center; 
+    margin-left:auto; 
+    margin-right: auto;
+  }
+
+  .fullscreenflex {
+    display: block!important;
+  }
+
 }
 
 .aboutlist {
@@ -153,4 +129,8 @@ body {
   margin-right: auto; 
   list-style-position: inside; 
   text-align: left
+}
+
+.fullscreenflex {
+  display:flex;
 }
