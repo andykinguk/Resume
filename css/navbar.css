@@ -32,23 +32,23 @@
     
 }
 
-/*0 - 284px: Title over three rows of icons*/
+/*0 - 284px: No title. 3 rows of icons*/
 @media (max-width: 300px) {
 
-    .details {
+    .nav-block {
         display: none;
     }
     
     .container-body {
-        margin-top: 354px;
+        margin-top: 298px;
     }
 
 }
 
-/*285 - 619px: Title over two rows of icons*/
+/*285 - 619px: No title. 2 rows of icons*/
 @media (min-width: 300.1px) {
 
-    .details {
+    .nav-block {
         display: none;
     }
     
@@ -61,16 +61,16 @@
     }
     
     .container-body {
-        margin-top: 270px;
+        margin-top: 214px;
     }
 
 }
 
-/*620 - 888px: Title left, two rows of icons right*/
+/*620 - 888px: No title. 1 row of icons*/
 @media (min-width: 636px) {
 
     .container-body {
-        margin-top: 186px;
+        margin-top: 130px;
     }
 
     .navbar-dark {
@@ -83,8 +83,16 @@
 
 }
 
-/*888 - 1200px: Title left, one row of icons right*/
+/*888 - 1200px: Title left, 1 row of icons right*/
 @media (min-width: 888px) {
+
+    .nav-block {
+        display: flex;
+    }
+
+    .details {
+        display: none;
+    }
 
     .navbar-dark {
         display: flex;
@@ -99,13 +107,16 @@
 /*1201+px: Full navbar. Title/Icons/Details */
 @media (min-width: 1201px) {
 
+    .nav-block {
+        display: flex;
+    }
+    
     .details {
         height: 58px;
         display: inline-block;
     }
 
 }
-
 
 /* Icon Classes */
 .icon-nav {
