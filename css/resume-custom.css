@@ -64,6 +64,24 @@ body {
 }
 
 /* Media Queries */
+/* Table */
+@media (max-width: 1199.98 px) {
+  .list-group-item {
+    height: 75px!important;
+    overflow: normal!important;
+    white-space: normal!important;
+  }  
+}
+
+/* Table */
+@media (min-width: 1199.98 px) {
+  .list-group-item {
+    height:50px;
+    overflow: hidden;
+    white-space: nowrap;
+  }    
+}
+
 
 /* Fullscreen */
 @media (min-width: 888px) {
@@ -115,7 +133,6 @@ body {
   .fullscreenonly {
     display: block;
   }
-
 }
 
 /* Table */
